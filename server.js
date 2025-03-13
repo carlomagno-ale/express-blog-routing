@@ -7,8 +7,8 @@ app.listen(port, () => {
     console.log(`http://localhost:${port}`);
 });
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('welcome')
-})
+})*/
 
-app.use('./api/v1/posts', postsRouter)
+app.use('/posts', postsRouter)

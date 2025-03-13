@@ -2,12 +2,12 @@ const express = require('express')
 const router = express.Router();
 
 // index
-router.get('/', function(req, res) {
-res.send('visualizza tutti i post');
+router.get('/',(req, res) => {
+    res.send('visualizza tutti i post');
 });
 
 //show
-router.get('/:id', () => {
+router.get('/:id', (req, res) => {
     res.send(`visualizza solo i post con id:${req.params.id}`)
 });
 
